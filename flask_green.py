@@ -17,8 +17,8 @@ from msrest.authentication import CognitiveServicesCredentials
 app = Flask(__name__)
 
 # YOLOv8 모델 로드
-car_model = YOLO(r'C:\green\best.pt')  # 첫 번째 모델 경로
-plate_model = YOLO(r'C:\green\bunhobest.pt')  # 두 번째 모델 경로
+car_model = YOLO('C:\green\best.pt')  # 첫 번째 모델 경로
+plate_model = YOLO('C:\green\bunhobest.pt')  # 두 번째 모델 경로
 
 # 차량 클래스 레이블
 class_labels = {0: 'light_morning', 1: 'light_ray', 2: 'car_grandeur', 3: 'car_zeep', 4: 'truck_poter', 5: 'van_starrex', 6: 'buildcar'}
